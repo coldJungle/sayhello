@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% from 'bootstrap/form.html' import form_field %}
+
+{% block content %}
+ <div class="hello-form">
+     {{ render_form(form, action=request.full-path) }}
+ </div>
+ <h5>
+     
+ </h5>
