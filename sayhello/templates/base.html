@@ -25,19 +25,18 @@
     {% block content %}{% endblock %}
     <footer class="text-center">
         {% block footer %}
-            <small> &copy; 2018 <a href="http://greyli.com" title="Writen by Grey Li">Grey Li</a> /
-                <a href="https://github.com/greyli/sayhello" title="Fork me on Github">Github</a> /
-                <a href="http://helloflask.com" title="A HelloFlask project">HelloFlask</a>
+            <small> &copy; 2018 <a href="https://github.com/coldJungle" title="Writen by ColdJungle">ColdJungle</a> /
+                <a href="https://github.com/coldJungle/sayhello" title="A HelloFlask project">SayHello</a>
             </small>
             <p><a id="bottom" href="#" title="Go Top">&uarr;</a></p>
         {% endblock %}
     </footer>
 </main>
 
-<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.2.1.slim.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.3.1.slim.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
 <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
-{{ moment.include_moment(local_js=url_for('static', filename='js/moment-with-locales.min.js'))}}
+{{ moment.include_moment(local_js=url_for('static', filename='js/moment-with-locales.js'))}}
 </body>
 </html>
